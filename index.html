@@ -4,11 +4,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Professional portfolio of [Your Name] – Full-Stack Software Engineer specializing in Flutter, Web Development, Python Automation, and Big Data Analytics.">
-<meta property="og:title" content="[Your Name] – Software Engineer">
+<meta name="description" content="Professional portfolio of Md. Rakibul Islam – Full-Stack Software Engineer specializing in Flutter, Web Development, Python Automation, and Big Data Analytics.">
+<meta property="og:title" content="Md. Rakibul Islam – Software Engineer">
 <meta property="og:description" content="Building elegant mobile apps, scalable web platforms, automation systems, and data-driven insights.">
 <meta property="og:type" content="website">
-<title>[Your Name] – Software Engineer</title>
+<title>Md. Rakibul Islam – Software Engineer</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -27,6 +27,8 @@
     --accent2:   #22D3EE;
     --lime:      #A3E635;
     --lime2:     #BEF264;
+    --green:     #08A045;
+    --green2:    #09b14c;
     --magenta:   #E879F9;
     --font-disp: 'Space Grotesk', sans-serif;
     --font-body: 'DM Sans', sans-serif;
@@ -48,6 +50,8 @@
     --accent2: #06B6D4;
     --lime:    #65A30D;
     --lime2:   #84CC16;
+    --green:   #08A045;
+    --green2:  #09b14c;
     --magenta: #C026D3;
   }
   /* ===================== BASE ===================== */
@@ -250,7 +254,13 @@
     font-family: var(--font-mono); font-size: 4.5rem; font-weight: 500;
     color: var(--accent2); overflow: hidden;
   }
-  .avatar img { width:100%; height:100%; object-fit:cover; border-radius:50%; }
+  .avatar img { width:100%; 
+    height:100%; 
+    object-fit:cover; 
+    border-radius:50%; 
+    object-position: center 0.5px;
+   
+  }
   .hero-stats {
     display: grid; grid-template-columns: repeat(3,1fr); gap: 1rem; width: 100%;
   }
@@ -357,6 +367,7 @@
   .skill-card .sk-bar { height: 3px; background: var(--border); border-radius: 2px; overflow: hidden; }
   .skill-card .sk-fill { height: 100%; border-radius: 2px; transition: width 1s ease; }
   .fill-cyan   { background: linear-gradient(90deg,var(--accent),var(--accent2)); }
+  .fill-green {background: linear-gradient(90deg, var(--green),var(--green2));}
   .fill-lime   { background: linear-gradient(90deg,var(--lime),var(--lime2)); }
   .fill-mag    { background: linear-gradient(90deg,var(--magenta),#F0ABFC); }
   .skill-card .sk-pct { font-family: var(--font-mono); font-size: 0.7rem; color: var(--muted); margin-top: 6px; }
@@ -704,14 +715,15 @@
 <!-- Navigation -->
 <nav id="navbar">
   <div class="nav-logo">
-    <span class="bracket">&lt;</span>Dev<span class="slash">/</span><span class="bracket">&gt;</span>
+    <span style="color:var(--accent2)">Md. Rakibul Islam</span>
+    <!-- <span class="bracket">&lt;</span>Dev<span class="slash">/</span><span class="bracket">&gt;</span> -->
   </div>
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
     <li><a href="#skills">Skills</a></li>
     <li><a href="#experience">Experience</a></li>
     <li><a href="#projects">Projects</a></li>
-    <li><a href="#certifications">Certs</a></li>
+    <li><a href="#certifications">Certifications</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
   <div class="nav-right">
@@ -738,9 +750,9 @@
   <div class="hero-backdrop">&lt; /&gt;</div>
   <div class="hero-grid">
     <div class="hero-content">
-      <div class="hero-tag"><span class="dot"></span> // available_for_hire = true</div>
+      <div class="hero-tag"><span class="dot"></span> // available_for_hire = False</div>
       <h1 class="hero-name">
-        [Your Name]<br>
+        Md. Rakibul Islam<br>
         <span class="line2">Software Engineer</span>
       </h1>
       <p class="hero-title">
@@ -761,17 +773,19 @@
         <a href="#" class="btn-outline" download>⬇ Download CV</a>
       </div>
       <div class="hero-socials">
-        <a href="https://github.com" class="social-link" aria-label="GitHub">gh</a>
-        <a href="https://linkedin.com" class="social-link" aria-label="LinkedIn">in</a>
-        <a href="https://twitter.com" class="social-link" aria-label="Twitter">𝕏</a>
-        <a href="mailto:you@email.com" class="social-link" aria-label="Email">@</a>
+        <a href="https://github.com/mdrakibulislam-official" class="social-link" aria-label="GitHub">gh</a>
+        <a href="https://www.linkedin.com/in/md-rakibul-islam-710/" class="social-link" aria-label="LinkedIn">in</a>
+        <!-- <a href="https://twitter.com" class="social-link" aria-label="Twitter">𝕏</a> -->
+        <a href="mailto:mdrakibulislamgp@gmail.com" class="social-link" aria-label="Email">@</a>
       </div>
     </div>
     <div class="hero-visual">
       <div class="avatar-wrap">
         <div class="avatar-ring2"></div>
         <div class="avatar-ring"></div>
-        <div class="avatar">&lt;/&gt;</div>
+        <div class="avatar">
+          <img src = "rakibul.jpg" alt="Md. Rakibul Islam">
+        </div>
       </div>
       <div class="hero-stats">
         <div class="stat-card">
@@ -875,33 +889,35 @@
     <!-- Flutter -->
     <div class="skills-grid active-grid" data-cat="flutter">
       <div class="skill-card fade-in"><div class="sk-icon">📱</div><div class="sk-name">Flutter / Dart</div><div class="sk-bar"><div class="sk-fill fill-cyan" style="width:92%"></div></div><div class="sk-pct">92%</div></div>
-      <div class="skill-card fade-in"><div class="sk-icon">🏗️</div><div class="sk-name">State Management (Bloc/Riverpod)</div><div class="sk-bar"><div class="sk-fill fill-lime" style="width:88%"></div></div><div class="sk-pct">88%</div></div>
+      <div class="skill-card fade-in"><div class="sk-icon">🏗️</div><div class="sk-name">State Management (Bloc/GetX/Provider)</div><div class="sk-bar"><div class="sk-fill fill-lime" style="width:88%"></div></div><div class="sk-pct">88%</div></div>
       <div class="skill-card fade-in"><div class="sk-icon">🔥</div><div class="sk-name">Firebase Integration</div><div class="sk-bar"><div class="sk-fill fill-cyan" style="width:85%"></div></div><div class="sk-pct">85%</div></div>
+      <div class="skill-card fade-in"><div class="sk-icon">🟢</div><div class="sk-name">Google Sheets Integration</div><div class="sk-bar"><div class="sk-fill fill-green" style="width:80%"></div></div><div class="sk-pct">80%</div></div>
       <div class="skill-card fade-in"><div class="sk-icon">🎨</div><div class="sk-name">Custom UI & Animations</div><div class="sk-bar"><div class="sk-fill fill-lime" style="width:80%"></div></div><div class="sk-pct">80%</div></div>
       <div class="skill-card fade-in"><div class="sk-icon">🔗</div><div class="sk-name">REST API / GraphQL</div><div class="sk-bar"><div class="sk-fill fill-cyan" style="width:87%"></div></div><div class="sk-pct">87%</div></div>
       <div class="skill-card fade-in"><div class="sk-icon">🧪</div><div class="sk-name">Testing & CI/CD</div><div class="sk-bar"><div class="sk-fill fill-mag" style="width:75%"></div></div><div class="sk-pct">75%</div></div>
     </div>
     <!-- Web -->
     <div class="skills-grid" data-cat="web">
-      <div class="skill-card fade-in"><div class="sk-icon">⚛️</div><div class="sk-name">React / Next.js</div><div class="sk-bar"><div class="sk-fill fill-cyan" style="width:88%"></div></div><div class="sk-pct">88%</div></div>
+      <!-- <div class="skill-card fade-in"><div class="sk-icon">⚛️</div><div class="sk-name">React / Next.js</div><div class="sk-bar"><div class="sk-fill fill-cyan" style="width:88%"></div></div><div class="sk-pct">88%</div></div> -->
       <div class="skill-card fade-in"><div class="sk-icon">🟨</div><div class="sk-name">JavaScript / TypeScript</div><div class="sk-bar"><div class="sk-fill fill-lime" style="width:90%"></div></div><div class="sk-pct">90%</div></div>
       <div class="skill-card fade-in"><div class="sk-icon">🎨</div><div class="sk-name">Tailwind CSS / SCSS</div><div class="sk-bar"><div class="sk-fill fill-cyan" style="width:92%"></div></div><div class="sk-pct">92%</div></div>
-      <div class="skill-card fade-in"><div class="sk-icon">🟢</div><div class="sk-name">Node.js / Express</div><div class="sk-bar"><div class="sk-fill fill-lime" style="width:82%"></div></div><div class="sk-pct">82%</div></div>
-      <div class="skill-card fade-in"><div class="sk-icon">🗄️</div><div class="sk-name">PostgreSQL / MongoDB</div><div class="sk-bar"><div class="sk-fill fill-mag" style="width:78%"></div></div><div class="sk-pct">78%</div></div>
-      <div class="skill-card fade-in"><div class="sk-icon">☁️</div><div class="sk-name">AWS / Vercel / Docker</div><div class="sk-bar"><div class="sk-fill fill-cyan" style="width:76%"></div></div><div class="sk-pct">76%</div></div>
+      <div class="skill-card fade-in"><div class="sk-icon">🐘</div><div class="sk-name">PHP</div><div class="sk-bar"><div class="sk-fill fill-cyan" style="width:90%"></div></div><div class="sk-pct">90%</div></div>
+      <!-- <div class="skill-card fade-in"><div class="sk-icon">🟢</div><div class="sk-name">Node.js / Express</div><div class="sk-bar"><div class="sk-fill fill-lime" style="width:82%"></div></div><div class="sk-pct">82%</div></div> -->
+      <!-- <div class="skill-card fade-in"><div class="sk-icon">🗄️</div><div class="sk-name">PostgreSQL / MongoDB</div><div class="sk-bar"><div class="sk-fill fill-mag" style="width:78%"></div></div><div class="sk-pct">78%</div></div> -->
+      <div class="skill-card fade-in"><div class="sk-icon">☁️</div><div class="sk-name">AWS / Vercel / Docker</div><div class="sk-bar"><div class="sk-fill fill-cyan" style="width:76%"></div></div><div class="sk-pct">46%</div></div>
     </div>
     <!-- Python -->
     <div class="skills-grid" data-cat="python">
       <div class="skill-card fade-in"><div class="sk-icon">🐍</div><div class="sk-name">Python (Advanced)</div><div class="sk-bar"><div class="sk-fill fill-lime" style="width:93%"></div></div><div class="sk-pct">93%</div></div>
-      <div class="skill-card fade-in"><div class="sk-icon">🤖</div><div class="sk-name">Selenium / Playwright</div><div class="sk-bar"><div class="sk-fill fill-cyan" style="width:88%"></div></div><div class="sk-pct">88%</div></div>
+      <!-- <div class="skill-card fade-in"><div class="sk-icon">🤖</div><div class="sk-name">Selenium / Playwright</div><div class="sk-bar"><div class="sk-fill fill-cyan" style="width:88%"></div></div><div class="sk-pct">88%</div></div> -->
       <div class="skill-card fade-in"><div class="sk-icon">🔄</div><div class="sk-name">Task Scheduling (Celery/APScheduler)</div><div class="sk-bar"><div class="sk-fill fill-lime" style="width:82%"></div></div><div class="sk-pct">82%</div></div>
-      <div class="skill-card fade-in"><div class="sk-icon">🕷️</div><div class="sk-name">Web Scraping (Scrapy/BeautifulSoup)</div><div class="sk-bar"><div class="sk-fill fill-cyan" style="width:85%"></div></div><div class="sk-pct">85%</div></div>
+      <!-- <div class="skill-card fade-in"><div class="sk-icon">🕷️</div><div class="sk-name">Web Scraping (Scrapy/BeautifulSoup)</div><div class="sk-bar"><div class="sk-fill fill-cyan" style="width:85%"></div></div><div class="sk-pct">85%</div></div> -->
       <div class="skill-card fade-in"><div class="sk-icon">⚙️</div><div class="sk-name">ETL Pipelines & Pandas</div><div class="sk-bar"><div class="sk-fill fill-mag" style="width:87%"></div></div><div class="sk-pct">87%</div></div>
       <div class="skill-card fade-in"><div class="sk-icon">🔌</div><div class="sk-name">FastAPI / Django REST</div><div class="sk-bar"><div class="sk-fill fill-lime" style="width:80%"></div></div><div class="sk-pct">80%</div></div>
     </div>
     <!-- Data -->
     <div class="skills-grid" data-cat="data">
-      <div class="skill-card fade-in"><div class="sk-icon">⚡</div><div class="sk-name">Apache Spark / PySpark</div><div class="sk-bar"><div class="sk-fill fill-cyan" style="width:80%"></div></div><div class="sk-pct">80%</div></div>
+      <!-- <div class="skill-card fade-in"><div class="sk-icon">⚡</div><div class="sk-name">Apache Spark / PySpark</div><div class="sk-bar"><div class="sk-fill fill-cyan" style="width:80%"></div></div><div class="sk-pct">80%</div></div> -->
       <div class="skill-card fade-in"><div class="sk-icon">📊</div><div class="sk-name">Pandas / NumPy</div><div class="sk-bar"><div class="sk-fill fill-lime" style="width:91%"></div></div><div class="sk-pct">91%</div></div>
       <div class="skill-card fade-in"><div class="sk-icon">📈</div><div class="sk-name">Matplotlib / Seaborn / Plotly</div><div class="sk-bar"><div class="sk-fill fill-cyan" style="width:89%"></div></div><div class="sk-pct">89%</div></div>
       <div class="skill-card fade-in"><div class="sk-icon">🎯</div><div class="sk-name">Tableau / Power BI</div><div class="sk-bar"><div class="sk-fill fill-mag" style="width:76%"></div></div><div class="sk-pct">76%</div></div>
@@ -921,9 +937,9 @@
     <div class="timeline">
       <div class="tl-item fade-in">
         <div class="tl-dot"></div>
-        <div class="tl-date">2022 – Present</div>
-        <div class="tl-role">Full-Stack Software Engineer</div>
-        <div class="tl-company">[Your Company] · Remote / Dhaka</div>
+        <div class="tl-date">Nov 2025 – Present</div>
+        <div class="tl-role">Software Engineer</div>
+        <div class="tl-company">FS Energy · Remote / Bogura</div>
         <p class="tl-desc">Developing cross-platform Flutter applications and React web platforms while architecting Python automation workflows and data analytics pipelines for enterprise clients. End-to-end ownership from architecture to production deployment.</p>
         <div class="tl-tags">
           <span class="tag">Flutter</span>
@@ -945,9 +961,9 @@
       </div>
       <div class="tl-item fade-in">
         <div class="tl-dot" style="background:var(--lime)"></div>
-        <div class="tl-date">2021 – 2022</div>
-        <div class="tl-role">Junior Flutter Developer</div>
-        <div class="tl-company">[Previous Company] · Dhaka, Bangladesh</div>
+        <div class="tl-date">Jan 2024 – Nov 2025</div>
+        <div class="tl-role">Junior Software Engineer</div>
+        <div class="tl-company">FS Energy · Bogura, Bangladesh</div>
         <p class="tl-desc">Focused on building consumer-facing Flutter applications with Firebase backends. Gained deep expertise in state management patterns, custom widget development, and mobile performance optimisation.</p>
         <div class="tl-tags">
           <span class="tag">Flutter</span>
@@ -966,9 +982,9 @@
       </div>
       <div class="tl-item fade-in">
         <div class="tl-dot" style="background:var(--magenta)"></div>
-        <div class="tl-date">2020 – 2021</div>
+        <div class="tl-date">Sep 2023 – Dec 2023</div>
         <div class="tl-role">Data Analyst Intern</div>
-        <div class="tl-company">[Internship Organisation] · Dhaka</div>
+        <div class="tl-company">FS Energy · Bogura</div>
         <p class="tl-desc">Worked on data cleaning, exploratory analysis, and building internal dashboards using Python and Tableau. Developed foundational skills in large-dataset processing and business intelligence reporting.</p>
         <div class="tl-tags">
           <span class="tag tag-lime">Python</span>
@@ -1211,17 +1227,17 @@
     <h2 class="section-title fade-in">Education</h2>
     <div class="edu-grid">
       <div class="edu-card fade-in">
-        <div class="edu-year">2017 – 2021</div>
+        <div class="edu-year">2018 – 2022</div>
         <div class="edu-degree">B.Sc. in Computer Science &amp; Engineering</div>
-        <div class="edu-inst">[Your University] · Bangladesh</div>
+        <div class="edu-inst">Gono Bishwabidyalay · Bangladesh</div>
         <ul class="edu-points">
-          <li>Focus areas: Algorithms, Databases, Machine Learning, Software Engineering</li>
-          <li>Final Year Project: Real-time Anomaly Detection in IoT Sensor Streams</li>
-          <li>Dean's List — 3 consecutive semesters</li>
-          <li>CGPA: [X.XX] / 4.00</li>
+          <li>Focus areas: Algorithms, Databases, Mobile app development, Software Engineering</li>
+          <li>Final Year Project: Android based attendance system using location</li>
+          <!-- <li>Dean's List — 3 consecutive semesters</li> -->
+          <li>CGPA: 3.98 / 4.00</li>
         </ul>
       </div>
-      <div class="edu-card fade-in">
+      <!-- <div class="edu-card fade-in">
         <div class="edu-year">Continuous Learning</div>
         <div class="edu-degree">Self-Directed Technical Education</div>
         <div class="edu-inst">Online Platforms & Open Source</div>
@@ -1231,7 +1247,7 @@
           <li>Active participant in local tech meetups and hackathons</li>
           <li>Technical blog writer — 20+ articles on medium.com</li>
         </ul>
-      </div>
+      </div> -->
     </div>
   </div>
 </section>
@@ -1434,21 +1450,21 @@
           <div class="ci-icon">@</div>
           <div>
             <div class="ci-label">Email</div>
-            <div class="ci-val">hello@yourname.dev</div>
+            <div class="ci-val">mdrakibulislamgp@gmail.com</div>
           </div>
         </div>
         <div class="ci-item">
           <div class="ci-icon">gh</div>
           <div>
             <div class="ci-label">GitHub</div>
-            <div class="ci-val"><a href="https://github.com" style="color:var(--accent2)">github.com/yourhandle</a></div>
+            <div class="ci-val"><a href="https://github.com/mdrakibulislam-official" style="color:var(--accent2)">github.com/mdrakibulislam</a></div>
           </div>
         </div>
         <div class="ci-item">
           <div class="ci-icon">in</div>
           <div>
             <div class="ci-label">LinkedIn</div>
-            <div class="ci-val"><a href="https://linkedin.com" style="color:var(--accent2)">linkedin.com/in/yourname</a></div>
+            <div class="ci-val"><a href="https://www.linkedin.com/in/md-rakibul-islam-710/" style="color:var(--accent2)">linkedin.com/in/md-rakibul-islam</a></div>
           </div>
         </div>
         <div class="ci-item">
@@ -1524,14 +1540,14 @@
   <div class="footer-inner">
     <div class="footer-brand">
       <span class="nav-logo" style="display:block;margin-bottom:0.75rem">
-        <span class="bracket">&lt;</span>YourName<span class="slash">/</span><span class="bracket">&gt;</span>
+        <span class="bracket">&lt;</span>Md. Rakibul Islam<span class="slash">/</span><span class="bracket">&gt;</span>
       </span>
       <p>Full-stack software engineer building cross-platform Flutter apps, scalable web platforms, Python automation tools, and big data analytics systems.</p>
       <div class="footer-socials">
-        <a href="https://github.com" class="social-link" aria-label="GitHub">gh</a>
-        <a href="https://linkedin.com" class="social-link" aria-label="LinkedIn">in</a>
-        <a href="https://twitter.com" class="social-link" aria-label="Twitter">𝕏</a>
-        <a href="mailto:hello@yourname.dev" class="social-link" aria-label="Email">@</a>
+        <a href="https://github.com/mdrakibulislam-official" class="social-link" aria-label="GitHub">gh</a>
+        <a href="https://www.linkedin.com/in/md-rakibul-islam-710/" class="social-link" aria-label="LinkedIn">in</a>
+        <!-- <a href="https://twitter.com" class="social-link" aria-label="Twitter">𝕏</a> -->
+        <a href="mailto:mdrakibulislamgp@gmail.com" class="social-link" aria-label="Email">@</a>
       </div>
     </div>
     <div>
@@ -1556,7 +1572,7 @@
   </div>
   <div class="footer-bottom">
     <p>© 2025 [Your Name]. All rights reserved.</p>
-    <p>// built_with = ["Space Grotesk", "DM Sans", "JetBrains Mono", "vanilla JS"]</p>
+    <!-- <p>// built_with = ["Space Grotesk", "DM Sans", "JetBrains Mono", "vanilla JS"]</p> -->
   </div>
 </footer>
 
@@ -1590,7 +1606,7 @@ window.addEventListener('scroll',()=>{
 document.getElementById('theme-toggle').addEventListener('click',function(){
   const d=document.documentElement.getAttribute('data-theme')==='dark';
   document.documentElement.setAttribute('data-theme',d?'light':'dark');
-  this.textContent=d?'🌙':'☀️';
+  this.textContent=d?'☀️':'🌙';
 });
 
 document.getElementById('hamburger').addEventListener('click',()=>document.getElementById('mobile-menu').classList.toggle('open'));
